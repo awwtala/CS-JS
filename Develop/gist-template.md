@@ -1,10 +1,20 @@
-# Title (replace with your title)
+# CS_JS17
 
+Regular expression(regex) can be a difficult concept to percieve. With the help of this gist, you will be able to break regex and understand its components.
 Introductory paragraph (replace this with your text)
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+Regular expressions are used to search and find patterns with a string of text. Regex is an advance way of searching through text and grouping those searches together. They can also be used in all programming languages.
+`/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`
+
+    Breakdown of the regex ^#?([a-f0-9]{6}|[a-f0-9]{3})$:
+
+- ^: Matches the beginning of the string.
+- #?: Matches an optional "#" symbol.
+- ([a-f0-9]{6}|[a-f0-9]{3}): Matches either 6 or 3 hexadecimal characters (a-f and 0-9).
+- $: Matches the end of the string.
+- This regex ensures the input string is a valid hexadecimal color code.
 
 ## Table of Contents
 
@@ -19,14 +29,24 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ## Regex Components
 
-    Regex components
+    Regex components are litteral and need to be wrapped in (/).
 
 ### Anchors
 
-    The two letters that are considered arches would be: ^ $
-    -
+    Anchors: ^ $
+    - ^ anchor: When ^ is used, it marks that it is a string that will start with a character that follows it.
+    Example: ^And
+        Using this string will find: "And" & "And you"
+        But will NOT find "and" & "and you"
+        so make sure to be exact with upper or lowercase, because regex is case sensitive.
+    - $ anchor: This marks a string that will end with chararters that come before  it.
+    Example: End$
+        Using this string will find "the End" & "that End"
+        This string is also capital sensitive.
 
 ### Quantifiers
+
+    Qualifiers are used to set limits to the string that is being matched. Qualifiers will have the min and max numbers.
 
 ### Grouping Constructs
 
@@ -52,12 +72,27 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ### Character Classes
 
+    Character classes are a set of characters that will attain a match in a string.
+    Some characters that you will see often will look like
+    - . : With a dot you can match any charater. except newline character(\n)
+    - \d : Will match any Arabic numeral digit. This is equal to [0-9] expression.
+    - \w : Matchs any alphanumeric character and anything with underscore (_). This is the same as [A-Za-z0-9_].
+    - \s : This will match a single whitespace character, tabs, and line breaks.
+
 ### The OR Operator
 
 ### Flags
 
 ### Character Escapes
 
+    Using the backslash (\) allows for a character to escape so it would not be considered literal. When we use the ({), we are starting a quantifier. When a backslash is added (\{), the reges will look for the open curly ({).
+    Special characters like the backslash (\) do lose their signifivance when they're inside bracket expressions.
+
 ## Author
+
+    Tala Awwad is the author of CS_JS17
+    For any questions:
+    Email: awwad.tala1@yahoo.com
+    Github: https://github.com/awwtala
 
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
