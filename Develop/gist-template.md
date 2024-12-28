@@ -81,7 +81,11 @@ Regular expressions are used to search and find patterns with a string of text. 
 
 ### The OR Operator
 
+    (abc|efg|hig|lmn) the prentheses are used to group all the sections above. The (|) is the OR operator, this will match any that inside the brackets: "abc", "efg", "hig", "lmn".
+
 ### Flags
+
+    You will find flags at the end of regex. These are the three flags you will see often: g, i, m.
 
 ### Character Escapes
 
@@ -94,5 +98,4 @@ Regular expressions are used to search and find patterns with a string of text. 
     For any questions:
     Email: awwad.tala1@yahoo.com
     Github: https://github.com/awwtala
-
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+    Artical referance: https://coding-boot-camp.github.io/full-stack/computer-science/regex-tutorial
